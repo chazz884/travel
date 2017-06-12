@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Promociones</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Las promociones son por tiempo limitado.</h3>
                 </div>
             </div>
             <div class="row">
@@ -68,9 +68,9 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <h4>Se Parte
+                                    <br>De Nuestra
+                                    <br>Historia!</h4>
                             </div>
                         </li>
                     </ul>

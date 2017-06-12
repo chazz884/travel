@@ -22,7 +22,7 @@
                         <i class="fa fa-plane fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Tiquetes aereos</h4>
-                    <p class="text-muted">Buscamos los tiquetes aereos mas adecuados a tu plan de viaje .</p>
+                    <p class="text-muted">Buscamos los tiquetes aereos mas adecuados a tu plan de viaje.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -40,7 +40,7 @@
                         <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Excursiones y grupos</h4>
-                    <p class="text-muted">Planeamos las excurciones a nivel nacional e internacional para que disfruten de la mejor etapa</p>
+                    <p class="text-muted">Planeamos las excurciones a nivel nacional e internacional para que disfruten de la mejor etapa del colegio.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -48,7 +48,7 @@
                         <i class="fa fa-gift fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Promociones</h4>
-                    <p class="text-muted">Encontramos las mejores promociones mes a mes parta que disfrutes de tu viaje a buen precio.</p>
+                    <p class="text-muted">Encontramos las mejores promociones mes a mes para que disfrutes de tu viaje a buen precio.</p>
                 </div>
                 <div class="col-md-4">
 <!--                     <span class="fa-stack fa-4x">
