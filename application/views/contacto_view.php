@@ -17,24 +17,24 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" name="nombre" type="text" placeholder="Nombre *" >
+                                    <input class="form-control" name="nombre" required type="text" placeholder="Nombre *" >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" name="email" type="email" placeholder="Email *" >
+                                    <input class="form-control" name="email" required type="email" placeholder="Email *" >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" name="telefono" type="tel" placeholder="Celular *" >
+                                    <input class="form-control" name="telefono" required type="tel" placeholder="Celular *" >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" name="pasajeros" type="tel" placeholder="Pasajeros *" >
+                                    <input class="form-control" name="pasajeros" type="text" placeholder="Pasajeros" >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
                                     <select class="select" name="promo" id="">
-                                        <option class="form-control">Selecciona Promoción*</option>
+                                        <option class="form-control">Selecciona Promoción</option>
                                         <option class="form-control">Promo 1</option>
                                         <option class="form-control">Promo 2</option>
                                         <option class="form-control">Promo 3</option>
@@ -46,11 +46,11 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="date" name="date" placeholder="Fecha de salida *" >
+                                    <input class="form-control" id="date" name="date" placeholder="Fecha de salida" >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="date2" name="date2" placeholder="Fecha de llegada *" >
+                                    <input class="form-control" id="date2" name="date2" placeholder="Fecha de llegada" >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">

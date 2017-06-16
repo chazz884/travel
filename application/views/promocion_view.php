@@ -10,62 +10,47 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
+                    <?php
+                    $conteo = -1;
+                        foreach ($promocion as $key) {
+                            $conteo++;
+                        if ($conteo%2==0) {
+                                
+                    ?>                              
                         <li>
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="<?php echo base_url();?>file/img/about/1.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="<?php echo base_url();?>file/img/<?php echo $key->promocion_imagen;?>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Promo 1</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4><?php echo $key->promocion_titulo;?></h4>
+                                    <h4 class="subheading"><?php echo $key->promocion_subtitulo;?></h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted"><?php echo $key->promocion_contenido;?></p>
                                 </div>
                             </div>
                         </li>
+                    <?php      
+                        }else{
+                    ?>                         
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="<?php echo base_url();?>file/img/about/2.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="<?php echo base_url();?>file/img/<?php echo $key->promocion_imagen;?>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Promo 2</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4><?php echo $key->promocion_titulo;?></h4>
+                                    <h4 class="subheading"><?php echo $key->promocion_subtitulo;?></h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted"><?php echo $key->promocion_contenido;?></p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="<?php echo base_url();?>file/img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Promo 3</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="<?php echo base_url();?>file/img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Promo 4</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
+                        </li>   
+                    <?php      
+                        }}
+                    ?>                       
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4>Se Parte
@@ -73,6 +58,7 @@
                                     <br>Historia!</h4>
                             </div>
                         </li>
+                                          
                     </ul>
                 </div>
             </div>

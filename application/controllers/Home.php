@@ -21,20 +21,25 @@ class Home extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model("Guardar_model");		
+		$this->load->model("Guardar_model");
+		$this->load->model("crud/Crud_servicio");
+		$this->load->model("crud/Crud_promocion");
+		$this->load->model("crud/Crud_equipo");
 	}
 
-	public function index($mensaje = NULL)
+	public function index()
 	{
-		$data['mensaje'] = $mensaje;
-
+		$setDatos = array('servicio' => $this->Crud_servicio->GetDatos());
+		$setDatosPromo = array('promocion' => $this->Crud_promocion->GetDatos());
+		$setDatosEquipo = array('equipo' => $this->Crud_equipo->GetDatos());
+		
 		$this->load->view('head');
 		$this->load->view('nav_view');
-		$this->load->view('servicio_view');
+		$this->load->view('servicio_view', $setDatos);
 		$this->load->view('destino_view');
-		$this->load->view('promocion_view');
-		$this->load->view('equipo_view');
-		$this->load->view('contacto_view',$data);
+		$this->load->view('promocion_view', $setDatosPromo);
+		$this->load->view('equipo_view', $setDatosEquipo);
+		$this->load->view('contacto_view');
 		$this->load->view('footer_view');
 	}
 
@@ -51,10 +56,6 @@ class Home extends CI_Controller {
         $this->form_validation->set_rules('nombre', 'Nombre', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('telefono', 'Telefono', 'required');
-        $this->form_validation->set_rules('pasajeros', 'Pasajeros', 'required');
-        $this->form_validation->set_rules('pregunta', 'Preguntas');
-        $this->form_validation->set_rules('date', 'Fecha de salida','required');
-        $this->form_validation->set_rules('date2', 'Fecha de llegada','required');
 
         $this->form_validation->set_message('required','El campo %s es obligatorio'); 
 
@@ -72,16 +73,19 @@ class Home extends CI_Controller {
 
 			    $this->Guardar_model->guardar($datos); 
 
-				echo "<script>alert('Tu mensaje ha sido enviado con éxito, espera la llamada de nuestro asesor.');</script>";
+				echo "<script>alert('TU MENSAJE HA SIDO ENVIADO CON EXITO, ESPERA LA LLAMADA DE NUESTRO ASESOR.');</script>";
 
  				redirect('#contact', 'refresh');
 			
-			        	
-        }else{
-        	echo "<script>alert('los campos con (*) son obligatorios');</script>";
-                
-                redirect('#contact', 'refresh');
+			// }        	
         }
+        // else
+        // {
+        // 	echo "<script>alert('los campos con (*) son obligatorios');</script>";
+                
+        //         redirect('#contact', 'refresh');
+        // }
 		
 	}
+	
 }
