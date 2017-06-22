@@ -31,16 +31,21 @@
             </div>
         </div>
     </footer>
+   
     <!-- Bootstrap core JavaScript -->
     <script src="<?php echo base_url();?>file/js/jquery.min.js"></script>
     <script src="<?php echo base_url();?>file/js/tether.min.js"></script>
-    <script src="<?php echo base_url();?>file/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url();?>file/js/contacto.js"></script>      
+    <script src="<?php echo base_url();?>file/js/bootstrap.min.js"></script>    
+    <script src="<?php echo base_url();?>file/js/tether.min.js"></script>
+    <script src="<?php echo base_url();?>file/js/jqBootstrapValidation.js"></script>
+    <script src="<?php echo base_url();?>file/js/contact_me.js"></script>
 
     <!-- Custom -->
     <script src="<?php echo base_url();?>file/js/agency.min.js"></script>
     <script src="<?php echo base_url();?>file/js/swiper.min.js"></script>
     <script src="<?php echo base_url();?>file/js/jquery-ui.js"></script>
+              
+
     <!-- Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {

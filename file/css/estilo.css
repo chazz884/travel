@@ -56,3 +56,42 @@
 #arrow{
     font-size: 85px;
 }
+
+#SinResultados {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  min-height: 125px;
+  background-color: #f0b800;
+  color: #ffffff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.close{
+  color: white;
+  text-shadow: 0 0 0;
+  opacity: 1;
+  font-size: 18px;
+}
+.adentro{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
+}
+.afuera{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
+}
+.alert > p + p {
+  margin-top: -4px;
+}
+.alert p {
+  color: #fff;
+}

@@ -22,7 +22,7 @@
     <!-- Custom styles -->
     <link href="<?php echo base_url();?>file/css/agency.css" rel="stylesheet">
     <link href="<?php echo base_url();?>file/css/swiper.min.css" rel="stylesheet">	
-    <link href="<?php echo base_url();?>file/css/estilo.css" rel="stylesheet">  
+    <link href="<?php echo base_url();?>file/css/estilo.css" rel="stylesheet"> 
 
             <!-- Temporary navbar container fix -->
     <style>        
