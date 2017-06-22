@@ -13,15 +13,15 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" name="nombre" type="text" placeholder="Nombre *" data-validation-required-message="Please enter your name." >
+                                    <input class="form-control" id="name" name="nombre" type="text" minlength="3" placeholder="Nombre *" data-validation-required-message="El nombre es obligatorio." >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" name="telefono" id="phone" type="tel" placeholder="Celular *" data-validation-required-message="Please enter your phone number.">
+                                    <input class="form-control" name="telefono" id="phone" type="number" minlength="7" maxlength="15" placeholder="Celular *" data-validation-required-message="El telefono es obligatorio.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email *" data-validation-required-message="Please enter your email address." >
+                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email *" data-validation-required-message="El correo electronico es obligatorio." >
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -50,7 +50,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="pregunta" id="message" placeholder="Preguntas y sugerencias" data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" name="pregunta" id="message" placeholder="Preguntas y sugerencias"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
