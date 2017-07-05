@@ -18,14 +18,14 @@
                             <h4><?php echo $key->equipo_nombre;?></h4>
                             <p class="text-muted"><?php echo $key->equipo_ocupacion;?></p>
                             <ul class="list-inline social-buttons">
-                                <li class="list-inline-item">
+                                <!-- <li class="list-inline-item">
                                     <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li> -->
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.facebook.com/rompelarutina.com.co/?ref=aymt_homepage_panel"><i class="fa fa-facebook"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/planea_tus_vacaciones/?hl=es"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>

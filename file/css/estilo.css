@@ -95,3 +95,18 @@
 .alert p {
   color: #fff;
 }
+
+@media (max-width: 768px){
+  .section-heading{
+    font-size: 35px !important;
+  }
+}
+
+footer ul.quicklinks {
+    font-size: 65% !important;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none; 
+}

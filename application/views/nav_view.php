@@ -33,7 +33,7 @@
     <header class="masthead">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Viaja a lo grande y descubres el mundo</div>
+                <div class="intro-lead-in">Viaja a lo grande y descubre el mundo</div>
                 <div class="intro-heading">Conoce nuestros servicios</div>
                 <a href="#services" ><i id="arrow" class="fa fa-angle-double-down" aria-hidden="true"></i></a>
             </div>

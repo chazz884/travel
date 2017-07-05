@@ -28,12 +28,18 @@ class Home extends CI_Controller {
 		$this->load->helper('registro');
 	}
 
-	public function index($mensaje = NULL)
+	public function index($data = NULL)
 	{
-		$data['mensaje'] = $mensaje;
+		$datos['data'] = $data;
 		$setDatos = array('servicio' => $this->Crud_servicio->GetDatos());
 		$setDatosPromo = array('promocion' => $this->Crud_promocion->GetDatos());
 		$setDatosEquipo = array('equipo' => $this->Crud_equipo->GetDatos());
+
+        $this->dataBasicaCampos  = $this->Crud_model->obtenerRegistros('produccion_promocion');
+    		if ($this->dataBasicaCampos != NULL):
+    			$this->dataBasicaCampos = controlSelect($this->dataBasicaCampos, "promocion_titulo", "promocion_titulo", "Seleccione Promoción",0);
+            endif;
+            $datos['produccion_promocion'] = $this->dataBasicaCampos;		
 		
 		$this->load->view('head');
 		$this->load->view('nav_view');
@@ -41,7 +47,7 @@ class Home extends CI_Controller {
 		$this->load->view('destino_view');
 		$this->load->view('promocion_view', $setDatosPromo);
 		$this->load->view('equipo_view', $setDatosEquipo);
-		$this->load->view('contacto_view', $data);
+		$this->load->view('contacto_view', $datos);
 		$this->load->view('footer_view');
 	}
 

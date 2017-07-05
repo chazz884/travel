@@ -71,9 +71,9 @@
 }
 
 .btn-login{
-  background: #d96805;
+  background: #fed136;
   color: #fff;
-  border: 2px solid #d96805;
+  border: 2px solid #fed136;
 }
 
 .btn-login:hover{
@@ -82,5 +82,5 @@
 }
 
 .titulo-singin{
-  color: #d96805;
+  color: #fed136;
 }

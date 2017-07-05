@@ -28,16 +28,8 @@
                                     <input class="form-control" name="pasajeros" type="text" placeholder="Pasajeros" >
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
-                                    <select class="select" name="promo" id="">
-                                        <option class="form-control">Selecciona Promoción</option>
-                                        <option class="form-control">Promo 1</option>
-                                        <option class="form-control">Promo 2</option>
-                                        <option class="form-control">Promo 3</option>
-                                        <option class="form-control">Promo 4</option>
-                                        <option class="form-control">Promo 5</option>
-                                        <option class="form-control">Cotizar otro destino</option>
-                                    </select>
+                                <div class="form-group" for="promo">
+                                        <?php echo form_dropdown('', $produccion_promocion, $data[''], ' class="select" name="promo" '); ?>
                                 </div>                                 
                             </div>
                             <div class="col-md-6">

@@ -39,7 +39,9 @@ $dataInputClave = array(
                 
                 <!--<a class="reset_pass" href="#">Lost your password?</a>-->
               </div>
-
+              <div style="margin-top: 15%;">
+                  <a class="btn btn-lg btn-login btn-block" href="http://rompelarutina.com.co/">Regresar</a>
+              </div>
               <div class="clearfix"></div>
 
               <div class="separator">

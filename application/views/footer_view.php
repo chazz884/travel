@@ -7,21 +7,21 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
+<!--                         <li class="list-inline-item">
                             <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li> -->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/rompelarutina.com.co/?ref=aymt_homepage_panel"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/planea_tus_vacaciones/?hl=es"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
+                            <a href="#">servicioalcliente@rompelarutina.com.co</a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">Terms of Use</a>
