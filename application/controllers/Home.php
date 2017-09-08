@@ -26,6 +26,7 @@ class Home extends CI_Controller {
 		$this->load->model("crud/Crud_promocion");
 		$this->load->model("crud/Crud_equipo");
 		$this->load->helper('registro');
+		$this->load->library('email');
 	}
 
 	public function index($data = NULL)
@@ -81,9 +82,18 @@ class Home extends CI_Controller {
 				"promo_contacto" => $promo,
 				);
 
+
+				$config['mailtype'] = 'html';
+				$this->email->initialize($config);
+				$this->email->from('csanabria3488@gmail.com');
+				$this->email->to('csanabria3488@gmail.com');
+				$this->email->subject('datos de rompe la rutina');
+				$this->email->message('Nombre: ' . $nombre . '<br>' . 'Email: ' . $email . '<br>' . 'Telefono: ' . $telefono . '<br>' . 'Pasajeros: ' . $pasajeros . '<br>' . 'Mensaje: ' . $pregunta . '<br>' . 'Fecha salida: ' . $date . '<br>' . 'Fecha llegada: ' . $date2 . '<br>' . 'Promoción: ' . $promo );
+				$this->email->send();
+
 			    if ($this->Crud_model->agregarRegistro('viaje_db',$datos)==TRUE) {
 			    	redirect('#contact');
-			    } 
+			    }
 			     				
 			
 			// } echo "<script>alert('TU MENSAJE HA SIDO ENVIADO CON EXITO, ESPERA LA LLAMADA DE NUESTRO ASESOR.');</script>";       	
@@ -99,5 +109,6 @@ class Home extends CI_Controller {
         // }
 		
 	}
+
 	
 }
